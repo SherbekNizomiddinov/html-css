@@ -1,64 +1,32 @@
+<!DOCTYPE html>
+
 <html>
-    <head>
-        <title>Azimjon's Blog</title>
-    </head>
-    <body>
-        <!-- Header boshlanishi -->
-        <header>
-            <h1>Azim Pulat's Blog</h1>
-            <nav>
-                <ul>
-                    <li><a href="https://kun.uz/">42</a></li>
-                    <li><a href="https://kun.uz/">Blog</a></li>
-                    <li><a href="https://kun.uz/">Talks</a></li>
-                    <li><a href="https://kun.uz/">Channel</a></li>
-                </ul>
-            </nav>
-        </header>
+	<head>
+		<title>Registration Page</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		
+		<div class="container">
+		<h1>Registration Form</h1>
 
-        <!-- Main boshlanishi -->
-        <main>
-            <article>
+		<form>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" placeholder="Enter Name" required><br><br>
 
-                <section>
-                    <img src="https://azimjon.com/static/assets/images/azimjon.jpg" alt="Azimjonning rasmi">                    
-                    <h1>Azim Pulat</h1>
-                    <h2>Software Engineer at Google</h2>
-                    <p>I write about <u>non-technical</u> stuff in <b>the technical world</b>.</p>
-                    <a href="https://kun.uz/">Read Blog</a>
-                    <a href="">About Me</a>
-                </section>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" placeholder="Enter Email" required><br><br>
 
-                <section>
-                    <h3>Ko'nikmalar</h3>
-                    <table border="1">
-                        <thead>
-                            <tr>
-                                <th>Number</th>
-                                <th>Ko'nikma</th>
-                                <th>Ko'rsatgich</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Python</td>
-                                <td>Zo'r</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>C</td>
-                                <td>O'rta</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-            </article>
-        </main>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" placeholder="Enter Password" required><br><br>
 
-        <!-- Footer boshlanishi -->
-        <footer>
-            <p>© 2025 azimjon.com</p>
-        </footer>
-    </body>
+		<label for="confirm_password">Confirm Password:</label>
+		<input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required><br><br>
+
+		<button type="submit">Ro'yxatdan o'tish</button>
+		</form>
+		</div>
+
+
+	</body>
 </html>
