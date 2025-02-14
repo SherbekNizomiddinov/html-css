@@ -1,32 +1,84 @@
 <!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaxsingizni tasdiqlang</title>
+	<style>
+		    body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #a8e6cf, #dcedc1);
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
-<html>
-	<head>
-		<title>Registration Page</title>
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		
-		<div class="container">
-		<h1>Registration Form</h1>
+        .login-container {
+            background: #70c964;
+            padding: 20px;
+            border-radius: 15px;
+            width: 350px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+        }
 
-		<form>
-		<label for="name">Name:</label>
-		<input type="text" id="name" name="name" placeholder="Enter Name" required><br><br>
+        .login-container:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+        }
 
-		<label for="email">Email:</label>
-		<input type="email" id="email" name="email" placeholder="Enter Email" required><br><br>
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .input-box {
+            width: 85%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            font-size: 16px;
+            transition: 0.3s;
+        }
 
-		<label for="password">Password:</label>
-		<input type="password" id="password" name="password" placeholder="Enter Password" required><br><br>
+        .input-box:focus {
+            background: #f7f7f7;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
 
-		<label for="confirm_password">Confirm Password:</label>
-		<input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required><br><br>
+        .login-btn {
+            width: 50%;
+            padding: 10px;
+            background: #556b2f;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
 
-		<button type="submit">Ro'yxatdan o'tish</button>
-		</form>
-		</div>
+        .login-btn:hover {
+            background: #6b8e23;
+            transform: scale(1.05);
+        }
+	</style>
+</head>
+<body>
 
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <input type="text" class="input-box" placeholder="Ismingizni kiriting" required>
+            <input type="password" class="input-box" placeholder="Password" required>
+			<input type="password" class="input-box" placeholder="Parolni tasdiqlang" required>
+            <button type="submit" class="login-btn">Ro'yhatdan o'tish</button>
+        </form>
+    </div>
 
-	</body>
+</body>
 </html>
